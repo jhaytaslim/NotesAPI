@@ -4,15 +4,19 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon ./app/server.js"
+    "dev": "tsc && nodemon ./server.js"
   },
   "author": "jhaytaslim",
   "license": "ISC",
   "dependencies": {
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.9",
     "body-parser": "^1.18.3",
+    "eslint": "^5.9.0",
     "express": "^4.16.4",
     "mongodb": "2.2.16",
-    "npm": "^6.4.1"
+    "npm": "^6.4.1",
+    "typescript-eslint-parser": "^21.0.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.6"

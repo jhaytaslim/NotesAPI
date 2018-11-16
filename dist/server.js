@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
 const mongodb_1 = require("mongodb");
 const db_1 = require("./config/db");
+const routes_1 = require("./routes");
 // const db             = require('./config/db.ts');
 const bodyParser = require('body-parser');
 // const express        = require('express');
@@ -21,7 +22,7 @@ class App {
         mongodb_1.MongoClient.connect(db_1.default.url, { uri_decode_auth: true }, (err, database) => {
             if (err)
                 return console.log(err);
-            require('./routes')(this.app, database);
+            routes_1.default(this.app, database);
             this.app.listen(port, () => {
                 console.log('We are live on ' + port);
             });

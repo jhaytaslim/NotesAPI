@@ -1,0 +1,20 @@
+{
+  "name": "notable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon ./app/server.js"
+  },
+  "author": "jhaytaslim",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "2.2.16",
+    "npm": "^6.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}

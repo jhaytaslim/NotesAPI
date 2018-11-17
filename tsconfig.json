@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "allowJs": true,
+      "outDir": "./dist",
+      "sourceMap": true
+    },
+    // "files": [
+    //   "./node_modules/@types/mocha/index.d.ts",
+    //   "./node_modules/@types/node/index.d.ts"
+    // ],
+    "include": [
+      "app/**/*",
+      "app/*"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }

@@ -4,11 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon ./app/server.js"
+    "dev": "tsc && nodemon ./dist/server.js"
   },
   "author": "jhaytaslim",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^10.12.9",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongodb": "2.2.16",
